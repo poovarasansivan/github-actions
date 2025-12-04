@@ -28,6 +28,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y maven
 
+
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: ${{ secrets.IAMROLE_GITHUB }}
